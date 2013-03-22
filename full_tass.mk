@@ -20,13 +20,13 @@
 #
 
 # Inherit device specific files
-$(call inherit-product, device/samsung/beni/device_beni.mk)
+$(call inherit-product, device/samsung/tass/device_tass.mk)
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := full_beni
-PRODUCT_DEVICE := beni
+PRODUCT_NAME := full_tass
+PRODUCT_DEVICE := tass
 PRODUCT_BRAND := Samsung
-PRODUCT_MODEL := GT-S5670
+PRODUCT_MODEL := GT-S5570
 PRODUCT_MANUFACTURER := Samsung
