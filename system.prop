@@ -7,6 +7,11 @@ ro.sf.lcd_density=120
 video.accelerate.hw=1
 debug.sf.no_hw_vsync=1
 debug.composition.type=gpu
+persist.sys.use_dithering=2
+debug.hwui.disable_vsync=true
+
+# Lockscreen
+ro.hwaccel.lockscreen=0
 
 # RIL, telephony
 rild.libpath=/system/lib/libsec-ril.so
