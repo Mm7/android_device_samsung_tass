@@ -2,7 +2,7 @@
 TARGET_BOOTANIMATION_NAME := vertical-240x320
 
 # Inherit device configuration for Tass
-$(call inherit-product, device/samsung/tass/tass.mk)
+$(call inherit-product, device/samsung/tass/full_tass.mk)
 
 # Inherit some common cyanogenmod stuff.
 $(call inherit-product, vendor/cm/config/common_mini_phone.mk)
