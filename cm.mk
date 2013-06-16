@@ -1,20 +1,20 @@
-## Specify phone tech before including full_phone
-$(call inherit-product, vendor/cm/config/gsm.mk)
+# BootAnimation
+TARGET_BOOTANIMATION_NAME := vertical-240x320
 
-# Inherit some common CM stuff.
+# Inherit device configuration for Tass
+$(call inherit-product, device/samsung/tass/tass.mk)
+
+# Inherit some common cyanogenmod stuff.
 $(call inherit-product, vendor/cm/config/common_mini_phone.mk)
 
-# Inherit device configuration
-$(call inherit-product, device/samsung/tass/full_tass.mk)
+# Include GSM stuff
+$(call inherit-product, vendor/cm/config/gsm.mk)
+
 
 # Release name and versioning
 PRODUCT_RELEASE_NAME := GalaxyTass
 PRODUCT_VERSION_DEVICE_SPECIFIC := -GT-S5570
--include vendor/cm/config/common_versions.mk
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tass
 PRODUCT_NAME := cm_tass
-
-## Bootanimation
-TARGET_BOOTANIMATION_NAME := vertical-240x320
